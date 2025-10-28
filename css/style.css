@@ -143,8 +143,6 @@ nav h1{
 
 /* メイン ****************************/
 
-/* .fv {
-} */
 
 .works-list{
     width: 100%;
@@ -166,8 +164,6 @@ nav h1{
     margin-top: 5%;
     text-align: center;
 }
-
-
 
 /**************************** メイン */
 
@@ -228,7 +224,8 @@ footer{
 /* Aboutページ ****************************/
 
 .about .about-img{
-    width: calc(280px*100vw/1200px);
+    /* width: calc(280px*100vw/1200px); */
+
     margin: 8% auto;
 }
 
