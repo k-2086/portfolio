@@ -17,9 +17,7 @@ html {
     --h3-size: 1.6rem;
     --p-size: 1.6rem;
     --li-size: 1.8rem;
-    /* --footer-p-size: 1.4rem;
-    --box-button-long-size: 2.8rem;
-    --box-button-long-small-size: 2.8rem; */
+    /* --footer-p-size: 1.4rem;*/
 }
 /* フォント色 */
 h1, h2, h3, p, a, li{
@@ -88,27 +86,22 @@ body {
 }
 
 .container {
-    max-width: 1200px; /* 最大幅を1200px */
-    width: 100%;       /* 画面が1200px未満のとき、画面幅に合わせる */
-    margin: 0 auto;    /* コンテンツを中央に配置 */
-
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
    padding: 0 calc(100px*100%/1200px);
 }
-
-
 
 /******************************* 共通 */
 
 
 /* ヘッダー ****************************/
 
-
 header {
     /* ヘッダーの背景色を画面いっぱいに広げる */
     /* background-color: #faf9f2; */
     margin-bottom: calc(50px*100%/1200px);
 }
-
 nav{
     display: flex;
     justify-content: space-between;
@@ -118,13 +111,11 @@ nav{
 nav h1{
     align-items: center;
 }
-
 .nav-list{
     display: flex;
     gap: calc(50px*100vw/1200px);
     padding-right: calc(50px*100vw/1200px);
 }
-
 
 @media only screen and (max-width: 750px) {
     nav{
@@ -141,7 +132,6 @@ nav h1{
 
 /* メイン ****************************/
 
-
 .works-list{
     width: 100%;
     display: flex;
@@ -157,7 +147,6 @@ nav h1{
 .works-list .item:nth-child(n+3){
     margin-top: 8%;
 }
-
 .works-list .item h3{
     margin-top: 5%;
     text-align: center;
@@ -186,7 +175,6 @@ footer{
 
 /* Worksページ ****************************/
 
-
 .works-one .title{
     width: 80%;
     margin: 0 auto;
@@ -195,6 +183,10 @@ footer{
 
 .works-one .title h2, .works-one .title h3{
     padding-bottom: 2%;
+}
+
+.works-one .title .br{
+    display: none;
 }
 
 .works-one .line {
@@ -224,8 +216,6 @@ footer{
     width: 80%;
     margin: 0 auto;
 }
-
-
 
 /**************************** Worksページ */
 
