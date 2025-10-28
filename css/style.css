@@ -129,6 +129,16 @@ nav h1{
     padding-right: calc(50px*100vw/1200px);
 }
 
+
+@media only screen and (max-width: 750px) {
+    nav{
+        display: block;
+    }
+    .nav-list{
+        justify-content: flex-end;
+    }
+
+}
 /**************************** ヘッダー */
 
 /* メイン ****************************/
