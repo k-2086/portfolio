@@ -16,6 +16,7 @@ html {
     --h2-size: 2.6rem;
     --h3-size: 1.6rem;
     --p-size: 1.6rem;
+    --li-size: 1.8rem;
     /* --footer-p-size: 1.4rem;
     --box-button-long-size: 2.8rem;
     --box-button-long-small-size: 2.8rem; */
@@ -55,22 +56,22 @@ p {
 
 header a {
     font-family: "Montserrat", sans-serif;
-    font-size: var(--p-size);
+    /* font-size: var(--p-size); */
     font-weight: 400;
 }
 
 nav li{
     list-style-type: none;
     font-family: "M PLUS 1", sans-serif;
-    font-size: var(--p-size);
+    font-size: var(--li-size);
     font-weight: 400;
 }
 
-footer {
+/* footer {
     font-family: "M PLUS 1", sans-serif;
     font-size: var(--footer-p-size);
     font-weight: 400;
-}
+} */
 
 a {
     text-decoration: none;
@@ -112,7 +113,7 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: calc(80px*100%/1200px);
+    height: 8vw;
 }
 nav h1{
     align-items: center;
@@ -128,7 +129,9 @@ nav h1{
 @media only screen and (max-width: 750px) {
     nav{
         display: block;
+        height: 20vw;
     }
+
     .nav-list{
         justify-content: flex-end;
     }
@@ -158,6 +161,15 @@ nav h1{
 .works-list .item h3{
     margin-top: 5%;
     text-align: center;
+}
+
+/* ★ホバー時のスタイル★ */
+.works-list .item {
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* 変化を滑らかにする */
+}
+.works-list .item:hover {
+    transform: scale(1.01); /* 拡大 */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.02); /* シャドウ */
 }
 
 /**************************** メイン */
@@ -212,6 +224,8 @@ footer{
     width: 80%;
     margin: 0 auto;
 }
+
+
 
 /**************************** Worksページ */
 
